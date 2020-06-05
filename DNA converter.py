@@ -28,9 +28,9 @@ def translate()
                  if DNAinput[i:3]== table[key][:3]:
                      if len(protein)>5:
                          protein=protein+'X'
-                         return protein
                      else:
-			 protein=protein + table[key][len(table[key])-1:]
+			 protein=protein + table[key][len(table[key])-1
+	print (protein)
 		        
      else:
          print ("DNA strand is incorrect")

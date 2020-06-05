@@ -29,7 +29,7 @@ def translate()
                      if len(protein)>5:
                          protein=protein+'X'
                      else:
-			 protein=protein + table[key][len(table[key])-1
+			 protein=protein + table[key][len(table[key])-1:]
 	 print (protein)
 		        
      else:

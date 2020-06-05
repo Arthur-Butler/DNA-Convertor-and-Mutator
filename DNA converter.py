@@ -30,7 +30,7 @@ def translate()
                          protein=protein+'X'
                          return protein
                      else:
-			protein=protein + table[key][len(table[key])-1:]
+			 protein=protein + table[key][len(table[key])-1:]
 		        
      else:
          print ("DNA strand is incorrect")

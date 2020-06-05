@@ -4,24 +4,24 @@ def translate()
      with open("DNA.txt", "r") as f: 
 		DNAinput = f.read() 
      DNAinput = DNAinput.replace("\n", "") 
-	 DNAinput = DNAinput.replace("\r", "") 
+     DNAinput = DNAinput.replace("\r", "") 
      if len(DNAinput)%3 == 0:
           table = ['ATA:I', 'ATC:I', 'ATT:I', 'ATG:M', 
-		           'ACA:T', 'ACC:T', 'ACG:T', 'ACT:T', 
-		           'AAC:N', 'AAT:N', 'AAA:K', 'AAG:K', 
-		           'AGC:S', 'AGT:S', 'AGA:R', 'AGG:R',				 
-		           'CTA:L', 'CTC:L', 'CTG:L', 'CTT:L', 
-	                   'CCA:P', 'CCC:P', 'CCG:P', 'CCT:P', 
-	                   'CAC:H', 'CAT:H', 'CAA:Q', 'CAG:Q', 
-		           'CGA:R', 'CGC:R', 'CGG:R', 'CGT:R', 
-		           'GTA:V', 'GTC:V', 'GTG:V', 'GTT:V', 
-		           'GCA:A', 'GCC:A', 'GCG:A', 'GCT:A', 
-		           'GAC:D', 'GAT:D', 'GAA:E', 'GAG:E', 
-		           'GGA:G', 'GGC:G', 'GGG:G', 'GGT:G', 
-		           'TCA:S', 'TCC:S', 'TCG:S', 'TCT:S', 
-		           'TTC:F', 'TTT:F', 'TTA:L', 'TTG:L', 
-		           'TAC:Y', 'TAT:Y', 'TAA:_', 'TAG:_', 
-		           'TGC:C', 'TGT:C', 'TGA:_', 'TGG:W', ]
+		   'ACA:T', 'ACC:T', 'ACG:T', 'ACT:T', 
+		   'AAC:N', 'AAT:N', 'AAA:K', 'AAG:K', 
+		   'AGC:S', 'AGT:S', 'AGA:R', 'AGG:R',				 
+		   'CTA:L', 'CTC:L', 'CTG:L', 'CTT:L', 
+	           'CCA:P', 'CCC:P', 'CCG:P', 'CCT:P', 
+	           'CAC:H', 'CAT:H', 'CAA:Q', 'CAG:Q', 
+		   'CGA:R', 'CGC:R', 'CGG:R', 'CGT:R', 
+		   'GTA:V', 'GTC:V', 'GTG:V', 'GTT:V', 
+		   'GCA:A', 'GCC:A', 'GCG:A', 'GCT:A', 
+		   'GAC:D', 'GAT:D', 'GAA:E', 'GAG:E', 
+		   'GGA:G', 'GGC:G', 'GGG:G', 'GGT:G', 
+		   'TCA:S', 'TCC:S', 'TCG:S', 'TCT:S', 
+		   'TTC:F', 'TTT:F', 'TTA:L', 'TTG:L', 
+		   'TAC:Y', 'TAT:Y', 'TAA:_', 'TAG:_', 
+		   'TGC:C', 'TGT:C', 'TGA:_', 'TGG:W', ]
          protein=""
          for i in range(0,len(DNAinput),3):
              for key in range(len(table)):
@@ -30,7 +30,7 @@ def translate()
                          protein=protein+'X'
                      else:
 			 protein=protein + table[key][len(table[key])-1
-	print (protein)
+	 print (protein)
 		        
      else:
          print ("DNA strand is incorrect")
